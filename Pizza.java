@@ -172,35 +172,8 @@ public class Pizza {
     }
 }
 
-class CheesePizza extends Pizza {
-    public CheesePizza() {
-        super("Medium", "Regular", "Cheese");
-    }
 
-    @Override
-    public void handleComplaint(String complaint) {
-        if (complaint.equals("too much cheese")) {
-            System.out.println("Handling complaint: Too much cheese");
-        } else {
-            super.handleComplaint(complaint);
-        }
-    }
-}
 
-class VeggiePizza extends Pizza {
-    public VeggiePizza() {
-        super("Medium", "Whole Wheat", "Veggies");
-    }
-}
 
-class TunaPizza extends Pizza {
-    public TunaPizza() {
-        super("Large", "Thin Crust", "Tuna");
-    }
-}
 
-class PepperoniPizza extends Pizza {
-    public PepperoniPizza() {
-        super("Large", "Regular", "Pepperoni");
-    }
-}
+
