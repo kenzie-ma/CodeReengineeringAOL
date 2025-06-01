@@ -12,11 +12,10 @@ import java.util.List;
 public class main {
 
     public static void main(String[] args) {
-        double avgTime = measureExecutionTime();
-        System.out.println("Average execution time over multiple runs: " + avgTime + " seconds");
+        measureExecutionTime();
     }
 
-    public static double measureExecutionTime() {
+    public static void measureExecutionTime() {
         int runs = 10;
         List<Long> executionTimes = new ArrayList<>();
 
@@ -37,7 +36,11 @@ public class main {
         for (Long time : executionTimes) {
             totalExecutionTime += time;
         }
-
-        return totalExecutionTime / runs / 1_000_000_000.0; // Convert nanoseconds to seconds
+        
+        double avgTimeInSeconds = totalExecutionTime / runs / 1_000_000_000.0;
+        
+        System.out.println("Average execution time over multiple runs: " + 
+            avgTimeInSeconds + " seconds");
+    
     }
 }
