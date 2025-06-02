@@ -50,67 +50,6 @@ public class Pizza {
         return topping;
     }
 
-    public void updateCustomerInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
-        this.customerFirstName = firstName;
-        this.customerLastName = lastName;
-        this.customerAddress = address;
-        this.customerPhoneNumber = phoneNumber;
-        this.customerEmail = email;
-    }
-
-    public void updateCustomerName(String firstName, String lastName) {
-        this.customerFirstName = firstName;
-        this.customerLastName = lastName;
-    }
-
-    public void updateCustomerAddress(String address) {
-        this.customerAddress = address;
-    }
-
-    public void updateCustomerPhoneNumber(String phoneNumber) {
-        this.customerPhoneNumber = phoneNumber;
-    }
-
-    public void updateCustomerEmail(String email) {
-        this.customerEmail = email;
-    }
-
-    public void notifyForPromotion() {
-        System.out.println("Notifying customer for promotion");
-    }
-
-    public void notifyForDiscount() {
-        System.out.println("Notifying customer for discount");
-    }
-
-    public void notifyForNewArrivals() {
-        System.out.println("Notifying customer for new arrivals");
-    }
-
-    public void applyDiscount() {
-        System.out.println("Applying discount for customer");
-    }
-
-    public void applyLoyaltyPoints() {
-        System.out.println("Applying loyalty points for customer");
-    }
-
-    public void handleComplaint(String complaint) {
-        if (complaint.equals("cold pizza")) {
-            System.out.println("Handling complaint: Pizza is cold");
-        } else if (complaint.equals("late delivery")) {
-            System.out.println("Handling complaint: Pizza is late");
-        } else if (complaint.equals("wrong order")) {
-            System.out.println("Handling complaint: Wrong pizza delivered");
-        } else {
-            System.out.println("Handling complaint: General complaint");
-        }
-    }
-
-    public void askForReceipt() {
-        System.out.println("Customer is asking for a receipt.");
-    }
-
     public void anotherUnusedMethod() {
     }
 
@@ -122,13 +61,7 @@ public class Pizza {
         this.setSize("Large");
         this.setDoughType("Thin Crust");
         this.setTopping("Pepperoni");
-        this.updateCustomerInfo("John", "Doe", "123 Street", "555-5555", "john.doe@example.com");
-        this.notifyForPromotion();
-        this.notifyForDiscount();
-        this.notifyForNewArrivals();
-        this.applyDiscount();
-        this.applyLoyaltyPoints();
-        this.handleComplaint("cold pizza");
+       
     }
 
     public void orderWithUnnecessaryDetails(String pizzaType, String size, String crustType, String toppings, boolean extraCheese, String discountCode) {
@@ -164,12 +97,9 @@ public class Pizza {
         System.out.println("Real method doing the actual work");
     }
 
-    public void accessInternalDetails() {
-        System.out.println("Accessing internal details: " + this.size + ", " + this.doughType + ", " + this.topping);
-    }
-
     public void refusedBequest() {
     }
+
 }
 
 

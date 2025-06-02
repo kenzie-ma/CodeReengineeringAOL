@@ -107,42 +107,10 @@ public class Customer {
         this.email = email;
     }
 
-    public void notifyForPromotion() {
-        System.out.println("Notifying customer for promotion");
-    }
-
-    public void notifyForDiscount() {
-        System.out.println("Notifying customer for discount");
-    }
-
-    public void notifyForNewArrivals() {
-        System.out.println("Notifying customer for new arrivals");
-    }
-
-    public void applyDiscount() {
-        System.out.println("Applying discount for customer");
-    }
-
-    public void applyLoyaltyPoints() {
-        System.out.println("Applying loyalty points for customer");
-    }
-
-    public void handleComplaint(String complaint) {
-        if (complaint.equals("cold pizza")) {
-            System.out.println("Handling complaint: Pizza is cold");
-        } else if (complaint.equals("late delivery")) {
-            System.out.println("Handling complaint: Pizza is late");
-        } else if (complaint.equals("wrong order")) {
-            System.out.println("Handling complaint: Wrong pizza delivered");
-        } else {
-            System.out.println("Handling complaint: General complaint");
-        }
-    }
+   
 
     public void refusedBequest() {
     }
 
-    public void accessInternalDetails() {
-        System.out.println("Accessing internal details of PizzaShop: " + pizzaShop.getCashier().getChef().isBusy());
-    }
+    
 }

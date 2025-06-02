@@ -85,30 +85,6 @@ public class Cashier {
         System.out.println("Real method doing the actual work");
     }
 
-    public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
-    public void updateName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public void updateAddress(String address) {
-        this.address = address;
-    }
-
-    public void updatePhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void updateEmail(String email) {
-        this.email = email;
-    }
 
     public void notifyForPromotion() {
         System.out.println("Notifying customer for promotion");
@@ -145,7 +121,4 @@ public class Cashier {
     public void refusedBequest() {
     }
 
-    public void accessInternalDetails() {
-        System.out.println("Accessing internal details of Chef: " + chef.isBusy());
-    }
 }
