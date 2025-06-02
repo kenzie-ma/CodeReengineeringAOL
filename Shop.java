@@ -53,20 +53,4 @@ public class Shop {
         return this.chef;
     }
 
-
-    public void handleComplaint(String complaint) {
-        if (complaint.equals("cold pizza")) {
-            cashier.calmCustomerDown();
-        } else if (complaint.equals("late delivery")) {
-            cashier.calmCustomerDown();
-        } else if (complaint.equals("wrong order")) {
-            cashier.calmCustomerDown();
-        } else {
-            cashier.calmCustomerDown();
-        }
-    }
-
-
-    public void anotherUnusedMethod() {
-    }
 }

@@ -49,8 +49,6 @@ public class Cashier {
         System.out.println("Customer is asking for a receipt.");
     }
 
-    public void anotherUnusedMethod() {
-    }
 
     public void longMethod() {
         System.out.println("Cashier is handling many tasks in a single method");
@@ -65,26 +63,6 @@ public class Cashier {
         this.takeOrder("Cheese");
         this.takeOrder("Cheese");
     }
-
-    public void chainOfMethods() {
-        System.out.println("Cashier is initiating a message chain");
-        this.chef.cleanKitchen();
-    }
-
-    public void middlemanMethod() {
-        System.out.println("Cashier is calling a middleman method");
-        this.middleMethod();
-    }
-
-    public void middleMethod() {
-        System.out.println("Middleman method delegating to another method");
-        this.realMethod();
-    }
-
-    public void realMethod() {
-        System.out.println("Real method doing the actual work");
-    }
-
 
     public void notifyForPromotion() {
         System.out.println("Notifying customer for promotion");
@@ -118,7 +96,5 @@ public class Cashier {
         }
     }
 
-    public void refusedBequest() {
-    }
 
 }

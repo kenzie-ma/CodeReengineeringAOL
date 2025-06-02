@@ -36,8 +36,6 @@ public class Customer {
         System.out.println("Customer is asking for a receipt.");
     }
 
-    public void anotherUnusedMethod() {
-    }
 
     public void longComplaintMethod() {
         System.out.println("Customer is complaining about many things");
@@ -63,25 +61,7 @@ public class Customer {
         this.complain("Pizza is late");
     }
 
-    public void chainOfMethods() {
-        System.out.println("Customer is initiating a message chain");
-        this.pizzaShop.getCashier().getChef().cleanKitchen();
-    }
-
-    public void middlemanMethod() {
-        System.out.println("Customer is calling a middleman method");
-        this.middleMethod();
-    }
-
-    public void middleMethod() {
-        System.out.println("Middleman method delegating to another method");
-        this.realMethod();
-    }
-
-    public void realMethod() {
-        System.out.println("Real method doing the actual work");
-    }
-
+    
     public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -107,10 +87,6 @@ public class Customer {
         this.email = email;
     }
 
-   
-
-    public void refusedBequest() {
-    }
 
     
 }

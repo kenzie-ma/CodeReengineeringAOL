@@ -50,11 +50,6 @@ public class Pizza {
         return topping;
     }
 
-    public void anotherUnusedMethod() {
-    }
-
-    public void yetAnotherUnusedMethod() {
-    }
 
     public void longMethod() {
         System.out.println("Pizza is handling many tasks in a single method");
@@ -78,27 +73,6 @@ public class Pizza {
         this.setTopping("Cheese");
     }
 
-    public void chainOfMethods() {
-        System.out.println("Pizza is initiating a message chain");
-        this.updateCustomerAddress("123 Street");
-    }
-
-    public void middlemanMethod() {
-        System.out.println("Pizza is calling a middleman method");
-        this.middleMethod();
-    }
-
-    public void middleMethod() {
-        System.out.println("Middleman method delegating to another method");
-        this.realMethod();
-    }
-
-    public void realMethod() {
-        System.out.println("Real method doing the actual work");
-    }
-
-    public void refusedBequest() {
-    }
 
 }
 
