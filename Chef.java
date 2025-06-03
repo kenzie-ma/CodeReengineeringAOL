@@ -62,22 +62,11 @@ public class Chef {
 
     public void longMethod() {
         System.out.println("Chef is handling many tasks in a single method");
-        this.bakePizza("Cheese");
-        this.cutPizzaAndPutInBox();
-        this.deliverPizza();
-        this.hurryUp();
-        this.cleanKitchen();
-        this.updateContactInfo("John", "Doe", "123 Street", "555-5555", "john.doe@example.com");
-        this.notifyForPromotion();
-        this.notifyForDiscount();
-        this.notifyForNewArrivals();
-        this.applyDiscount();
-        this.applyLoyaltyPoints();
-        this.handleComplaint("cold pizza");
-        this.askForReceipt();
-        this.chainOfMethods();
-        this.middlemanMethod();
-        this.accessInternalDetails();
+        bakePizza("Cheese");
+        cutPizzaAndPutInBox();
+        deliverPizza();
+        hurryUp();
+        cleanKitchen();
     }
 
    
