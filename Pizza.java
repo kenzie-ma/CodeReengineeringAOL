@@ -50,7 +50,6 @@ public class Pizza {
         return topping;
     }
 
-
     public void longMethod() {
         setSize("Large");
         setDoughType("Thin Crust");
@@ -58,13 +57,7 @@ public class Pizza {
        
     }
 
-    public void orderWithUnnecessaryDetails(String pizzaType, String size, String crustType, String toppings, boolean extraCheese, String discountCode) {
-        System.out.println("Placing a detailed order for " + pizzaType + " pizza with " + size + ", " + crustType + ", " + toppings + ", extra cheese: " + extraCheese + ", discount code: " + discountCode);
-        this.setSize(size);
-        this.setDoughType(crustType);
-        this.setTopping(toppings);
-        this.applyDiscount();
-    }
+  
 
 }
 

@@ -32,7 +32,7 @@ public class Chef {
 
     public void bakePizza(String pizzaType) {
         System.out.println("Chef is baking " + pizzaType + " pizza.");
-        this.pizza = new Pizza("Unknown", "Unknown", pizzaType);
+        pizza = new Pizza("Unknown", "Unknown", pizzaType);
         cutPizzaAndPutInBox();
     }
 
