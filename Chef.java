@@ -58,67 +58,7 @@ public class Chef {
         return this.busy;
     }
 
-    public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
-    public void updateName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public void updateAddress(String address) {
-        this.address = address;
-    }
-
-    public void updatePhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void updateEmail(String email) {
-        this.email = email;
-    }
-
-    public void notifyForPromotion() {
-        System.out.println("Notifying customer for promotion");
-    }
-
-    public void notifyForDiscount() {
-        System.out.println("Notifying customer for discount");
-    }
-
-    public void notifyForNewArrivals() {
-        System.out.println("Notifying customer for new arrivals");
-    }
-
-    public void applyDiscount() {
-        System.out.println("Applying discount for customer");
-    }
-
-    public void applyLoyaltyPoints() {
-        System.out.println("Applying loyalty points for customer");
-    }
-
-    public void handleComplaint(String complaint) {
-        if (complaint.equals("cold pizza")) {
-            System.out.println("Handling complaint: Pizza is cold");
-        } else if (complaint.equals("late delivery")) {
-            System.out.println("Handling complaint: Pizza is late");
-        } else if (complaint.equals("wrong order")) {
-            System.out.println("Handling complaint: Wrong pizza delivered");
-        } else {
-            System.out.println("Handling complaint: General complaint");
-        }
-    }
-
-    public void askForReceipt() {
-        System.out.println("Customer is asking for a receipt.");
-    }
-
+    
     public void anotherUnusedMethod() {
     }
 
@@ -177,9 +117,6 @@ public class Chef {
         System.out.println("Real method doing the actual work");
     }
 
-    public void accessInternalDetails() {
-        System.out.println("Accessing internal details of Pizza: " + this.pizza.getTopping());
-    }
 
     public void refusedBequest() {
     }

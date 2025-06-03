@@ -36,11 +36,11 @@ public class Shop {
             case "cheese":
                 return new CheesePizza();
             case "veggie":
-                return new CheesePizza();
+                return new VeggiePizza();
             case "tuna":
-                return new CheesePizza();
+                return new TunaPizza();
             case "pepperoni":
-                return new CheesePizza();
+                return new PepperoniPizza();
             default:
                 throw new IllegalArgumentException("Unknown pizza type");
         }
