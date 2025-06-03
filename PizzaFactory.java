@@ -1,13 +1,13 @@
 public class PizzaFactory {
-    public static Pizza createPizza(String pizzaType) {
-        switch (pizzaType.toLowerCase()) {
-            case "cheese":
+    public static Pizza createPizza(PizzaType type) {
+        switch (type) {
+            case CHEESE:
                 return new CheesePizza();
-            case "veggie":
+            case VEGGIE:
                 return new VeggiePizza();
-            case "tuna":
+            case TUNA:
                 return new TunaPizza();
-            case "pepperoni":
+            case PEPPERONI:
                 return new PepperoniPizza();
             default:
                 throw new IllegalArgumentException("Unknown pizza type");

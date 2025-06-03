@@ -15,7 +15,7 @@ public class Shop {
         this.cashier = new Cashier(chef);
     }
 
-    public void receiveOrder(String pizzaType) {
+    public void receiveOrder(PizzaType  pizzaType) {
         System.out.println("Shop received order for " + pizzaType + " pizza.");
         cashier.takeOrder(pizzaType);
     }

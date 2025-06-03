@@ -21,7 +21,7 @@ public class Chef {
         this.kitchenClean = true;
     }
 
-    public void bakePizza(String pizzaType) {
+    public void bakePizza(PizzaType  pizzaType) {
         System.out.println("Chef is baking " + pizzaType + " pizza.");
         this.pizza = PizzaFactory.createPizza(pizzaType);
         cutPizzaAndPutInBox();

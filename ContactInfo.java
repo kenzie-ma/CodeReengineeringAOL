@@ -55,20 +55,16 @@ public class ContactInfo {
     }
 
     public void updateName(String firstName, String lastName) {
-        setFirstName(firstName);
-        setLastName(lastName);
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
     }
-
-    public void updateAddress(String address) {
-        contactInfo.setAddress(address);
-    }
-
-    public void updatePhoneNumber(String phoneNumber) {
-        contactInfo.setPhoneNumber(phoneNumber);
-    }
-
-    public void updateEmail(String email) {
-        contactInfo.setEmail(email);
+    
+    public void updateContact(String firstName, String lastName, String address, String phoneNumber, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 }
 

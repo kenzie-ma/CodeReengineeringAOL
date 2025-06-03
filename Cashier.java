@@ -17,7 +17,7 @@ public class Cashier {
         return this.chef;
     }
 
-    public void takeOrder(String pizzaType) {
+    public void takeOrder(PizzaType  pizzaType) {
         System.out.println("Cashier is taking order for " + pizzaType + " pizza.");
         chef.bakePizza(pizzaType);
     }

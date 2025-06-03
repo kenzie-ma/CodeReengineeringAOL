@@ -14,9 +14,9 @@ public class Customer {
         this.pizzaShop = pizzaShop;
     }
 
-    public void orderPizza(String pizzaType) {
+    public void orderPizza(PizzaType pizzaType) {
         System.out.println("Customer is placing an order for " + pizzaType + " pizza.");
-        this.pizzaShop.receiveOrder(pizzaType);
+        pizzaShop.receiveOrder(pizzaType);
     }
 
     public void complain(String complaint) {
@@ -38,25 +38,14 @@ public class Customer {
         askForReceipt();
     }
 
-    public void updateContactInfo(ContactInfo contactInfo) {
-        this.contactInfo = contactInfo;
-    }
-
     public void updateName(String firstName, String lastName) {
         contactInfo.updateName(firstName, lastName);
     }
 
-     public void updateAddress(String address) {
-        contactInfo.setAddress(address);
+    public void updateContact(String firstName, String lastName, String address, String phoneNumber, String email) {
+        contactInfo.updateContact(firstName, lastName, address, phoneNumber, email);
     }
 
-    public void updatePhoneNumber(String phoneNumber) {
-        contactInfo.setPhoneNumber(phoneNumber);
-    }
-
-    public void updateEmail(String email) {
-        contactInfo.setEmail(email);
-    }
 
 
 
