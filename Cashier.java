@@ -29,7 +29,6 @@ public class Cashier {
 
     public void calmCustomerDown() {
         System.out.println("Cashier is calming the customer down.");
-        this.chef.cleanKitchen();
     }
 
     public void deliverPizzaToCustomer() {
@@ -37,15 +36,18 @@ public class Cashier {
     }
 
     public void longMethod() {
-        takeOrder("Cheese");
-        hurryUpChef();
-        calmCustomerDown();
+        processOrder("Cheese");
+        manageCustomerAndChef();
+    }
+
+    private void processOrder(String pizzaType) {
+        takeOrder(pizzaType);
         deliverPizzaToCustomer();
     }
 
-    public void duplicateMethod() {
-        this.takeOrder("Cheese");
-        this.takeOrder("Cheese");
+    private void manageCustomerAndChef() {
+        hurryUpChef();
+        calmCustomerDown();
     }
 
     public void notifyForPromotion() {
@@ -66,18 +68,6 @@ public class Cashier {
 
     public void applyLoyaltyPoints(boolean frequentCustomerDiscount) {
         System.out.println("Applying loyalty points for customer");
-    }
-
-    public void handleComplaint(String complaint) {
-        if (complaint.equals("cold pizza")) {
-            this.calmCustomerDown();
-        } else if (complaint.equals("late delivery")) {
-            this.calmCustomerDown();
-        } else if (complaint.equals("wrong order")) {
-            this.calmCustomerDown();
-        } else {
-            this.calmCustomerDown();
-        }
     }
 
 

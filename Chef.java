@@ -53,20 +53,19 @@ public class Chef {
 
     public void longMethod() {
         System.out.println("Chef is handling many tasks in a single method");
-        bakePizza("Cheese");
+        handleOrder("Cheese");
+        speedUpAndClean();
+    }
+
+    private void handleOrder(String pizzaType) {
+        bakePizza(pizzaType);
         cutPizzaAndPutInBox();
         deliverPizza();
+    }
+
+    private void speedUpAndClean() {
         hurryUp();
         cleanKitchen();
     }
-
-   
-
-    public void duplicateMethod() {
-        System.out.println("Chef is making a duplicate order");
-        this.bakePizza("Cheese");
-        this.bakePizza("Cheese");
-    }
-
     
 }

@@ -21,7 +21,7 @@ public class Customer {
 
     public void complain(String complaint) {
         System.out.println("Customer is complaining: " + complaint);
-        this.pizzaShop.getCashier().calmCustomerDown();
+        this.pizzaShop.getCashier().calmCustomerDown();;
     }
 
     public void askForReceipt() {
@@ -45,19 +45,19 @@ public class Customer {
    public void updateName(String firstName, String lastName) {
     contactInfo.setFirstName(firstName);
     contactInfo.setLastName(lastName);
-}
+    }
 
-public void updateAddress(String address) {
-    contactInfo.setAddress(address);
-}
+    public void updateAddress(String address) {
+        contactInfo.setAddress(address);
+    }
 
-public void updatePhoneNumber(String phoneNumber) {
-    contactInfo.setPhoneNumber(phoneNumber);
-}
+    public void updatePhoneNumber(String phoneNumber) {
+        contactInfo.setPhoneNumber(phoneNumber);
+    }
 
-public void updateEmail(String email) {
-    contactInfo.setEmail(email);
-}
+    public void updateEmail(String email) {
+        contactInfo.setEmail(email);
+    }
 
 
 

@@ -44,11 +44,15 @@ public class Pizza {
     }
 
     public void longMethod() {
+        prepareStandardPepperoni();
+    }
+
+    private void prepareStandardPepperoni() {
         setSize("Large");
         setDoughType("Thin Crust");
         setTopping("Pepperoni");
-       
     }
+
 
   
 
