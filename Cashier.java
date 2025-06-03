@@ -54,6 +54,4 @@ public class Cashier {
     public void applyLoyaltyPoints(boolean frequentCustomerDiscount) {
         System.out.println("Applying loyalty points for customer");
     }
-
-
 }

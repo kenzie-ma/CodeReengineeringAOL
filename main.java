@@ -12,10 +12,11 @@ import java.util.List;
 public class main {
 
     public static void main(String[] args) {
-        measureExecutionTime();
+        double averageTime = measureExecutionTime();
+        printMeasurement(averageTime);
     }
 
-    public static void measureExecutionTime() {
+    public static double measureExecutionTime() {
         int runs = 10;
         List<Long> executionTimes = new ArrayList<>();
 
@@ -24,7 +25,7 @@ public class main {
 
             Shop shop = new Shop();
             Customer customer = new Customer(shop);
-            customer.orderPizza(CHEESE);
+            customer.orderPizza(PizzaType.CHEESE);
             customer.complain("The pizza is too cold.");
 
             long endTime = System.nanoTime();
@@ -37,9 +38,11 @@ public class main {
             totalExecutionTime += time;
         }
         
-        double avgTimeInSeconds = totalExecutionTime / runs / 1_000_000_000.0;
-        
+        return totalExecutionTime / runs / 1_000_000_000.0;
+    }
+
+    public static void printMeasurement(double measureExecutionTime){
         System.out.println("Average execution time over multiple runs: " + 
-            avgTimeInSeconds + " seconds");
+                    measureExecutionTime + " seconds");
     }
 }
