@@ -19,12 +19,12 @@ public class Cashier {
 
     public void takeOrder(String pizzaType) {
         System.out.println("Cashier is taking order for " + pizzaType + " pizza.");
-        this.chef.bakePizza(pizzaType);
+        chef.bakePizza(pizzaType);
     }
 
     public void hurryUpChef() {
         System.out.println("Cashier is hurrying up the chef.");
-        this.chef.hurryUp();
+        chef.hurryUp();
     }
 
     public void calmCustomerDown() {
@@ -33,21 +33,6 @@ public class Cashier {
 
     public void deliverPizzaToCustomer() {
         System.out.println("Cashier is delivering pizza to the customer.");
-    }
-
-    public void longMethod() {
-        processOrder("Cheese");
-        manageCustomerAndChef();
-    }
-
-    private void processOrder(String pizzaType) {
-        takeOrder(pizzaType);
-        deliverPizzaToCustomer();
-    }
-
-    private void manageCustomerAndChef() {
-        hurryUpChef();
-        calmCustomerDown();
     }
 
     public void notifyForPromotion() {

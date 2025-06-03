@@ -54,7 +54,22 @@ public class ContactInfo {
         this.email = email;
     }
 
-    
+    public void updateName(String firstName, String lastName) {
+        setFirstName(firstName);
+        setLastName(lastName);
+    }
+
+    public void updateAddress(String address) {
+        contactInfo.setAddress(address);
+    }
+
+    public void updatePhoneNumber(String phoneNumber) {
+        contactInfo.setPhoneNumber(phoneNumber);
+    }
+
+    public void updateEmail(String email) {
+        contactInfo.setEmail(email);
+    }
 }
 
 

@@ -9,7 +9,6 @@ LICENSE file in the root directory of this source tree. This dataset contains sm
 public class Shop {
     private Chef chef;
     private Cashier cashier;
-    private Pizza pizza;
 
     public Shop() {
         this.chef = new Chef();
@@ -18,24 +17,9 @@ public class Shop {
 
     public void receiveOrder(String pizzaType) {
         System.out.println("Shop received order for " + pizzaType + " pizza.");
-        pizza = createPizza(pizzaType);
         cashier.takeOrder(pizzaType);
     }
 
-    public Pizza createPizza(String pizzaType) {
-        switch (pizzaType.toLowerCase()) {
-            case "cheese":
-                return new CheesePizza();
-            case "veggie":
-                return new VeggiePizza();
-            case "tuna":
-                return new TunaPizza();
-            case "pepperoni":
-                return new PepperoniPizza();
-            default:
-                throw new IllegalArgumentException("Unknown pizza type");
-        }
-    }
 
     public Cashier getCashier() {
         return this.cashier;
@@ -45,4 +29,8 @@ public class Shop {
         return this.chef;
     }
 
+    public void handleCustomerComplaint(String complaint) {
+        System.out.println("Forwarding complaint to cashier...");
+        cashier.calmCustomerDown();
+    }
 }

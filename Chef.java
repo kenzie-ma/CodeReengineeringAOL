@@ -23,7 +23,7 @@ public class Chef {
 
     public void bakePizza(String pizzaType) {
         System.out.println("Chef is baking " + pizzaType + " pizza.");
-        pizza = new Pizza("Unknown", "Unknown", pizzaType);
+        this.pizza = PizzaFactory.createPizza(pizzaType);
         cutPizzaAndPutInBox();
     }
 
@@ -49,23 +49,4 @@ public class Chef {
         return this.busy;
     }
 
-   
-
-    public void longMethod() {
-        System.out.println("Chef is handling many tasks in a single method");
-        handleOrder("Cheese");
-        speedUpAndClean();
-    }
-
-    private void handleOrder(String pizzaType) {
-        bakePizza(pizzaType);
-        cutPizzaAndPutInBox();
-        deliverPizza();
-    }
-
-    private void speedUpAndClean() {
-        hurryUp();
-        cleanKitchen();
-    }
-    
 }

@@ -42,20 +42,6 @@ public class Pizza {
     public String getTopping() {
         return topping;
     }
-
-    public void longMethod() {
-        prepareStandardPepperoni();
-    }
-
-    private void prepareStandardPepperoni() {
-        setSize("Large");
-        setDoughType("Thin Crust");
-        setTopping("Pepperoni");
-    }
-
-
-  
-
 }
 
 
