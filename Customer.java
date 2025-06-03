@@ -21,7 +21,7 @@ public class Customer {
 
     public void complain(String complaint) {
         System.out.println("Customer is complaining: " + complaint);
-        pizzaShop.handleCustomerComplaint(complaint);
+        pizzaShop.getCashier().calmCustomerDown();
     }
 
     public void askForReceipt() {
