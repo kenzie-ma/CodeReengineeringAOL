@@ -8,18 +8,9 @@ LICENSE file in the root directory of this source tree. This dataset contains sm
 
 public class Cashier {
     private Chef chef;
-    private boolean frequentCustomerDiscount;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String phoneNumber;
-    private String email;
-    private String tempDiscountCode;
-    private String tempOrderNote;
-
+  
     public Cashier(Chef chef) {
         this.chef = chef;
-        this.frequentCustomerDiscount = false;
     }
 
     public Chef getChef() {
@@ -73,7 +64,7 @@ public class Cashier {
         System.out.println("Applying discount for customer");
     }
 
-    public void applyLoyaltyPoints() {
+    public void applyLoyaltyPoints(boolean frequentCustomerDiscount) {
         System.out.println("Applying loyalty points for customer");
     }
 

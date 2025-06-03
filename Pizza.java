@@ -11,13 +11,6 @@ public class Pizza {
     private String doughType;
     private String topping;
     private boolean extraCheese;
-    private String customerFirstName;
-    private String customerLastName;
-    private String customerAddress;
-    private String customerPhoneNumber;
-    private String customerEmail;
-    private String tempDiscountCode;
-    private String tempOrderNote;
 
     public Pizza(String size, String doughType, String topping) {
         this.size = size;

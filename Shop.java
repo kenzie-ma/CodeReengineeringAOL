@@ -10,24 +10,15 @@ public class Shop {
     private Chef chef;
     private Cashier cashier;
     private Pizza pizza;
-    private boolean frequentCustomerDiscount;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String phoneNumber;
-    private String email;
-    private String tempDiscountCode;
-    private String tempOrderNote;
 
     public Shop() {
         this.chef = new Chef();
         this.cashier = new Cashier(chef);
-        this.frequentCustomerDiscount = false;
     }
 
     public void receiveOrder(String pizzaType) {
         System.out.println("Shop received order for " + pizzaType + " pizza.");
-        this.pizza = createPizza(pizzaType);
+        pizza = createPizza(pizzaType);
         cashier.takeOrder(pizzaType);
     }
 

@@ -8,18 +8,10 @@ LICENSE file in the root directory of this source tree. This dataset contains sm
 
 public class Customer {
     private Shop pizzaShop;
-    private boolean frequentCustomerDiscount;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String phoneNumber;
-    private String email;
-    private String tempDiscountCode;
-    private String tempOrderNote;
+    private ContactInfo contactInfo;
 
     public Customer(Shop pizzaShop) {
         this.pizzaShop = pizzaShop;
-        this.frequentCustomerDiscount = false;
     }
 
     public void orderPizza(String pizzaType) {
@@ -46,30 +38,27 @@ public class Customer {
         askForReceipt();
     }
 
-    public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
+    public void updateContactInfo(ContactInfo contactInfo) {
+        this.contactInfo = contactInfo;
     }
 
-    public void updateName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+   public void updateName(String firstName, String lastName) {
+    contactInfo.setFirstName(firstName);
+    contactInfo.setLastName(lastName);
+}
 
-    public void updateAddress(String address) {
-        this.address = address;
-    }
+public void updateAddress(String address) {
+    contactInfo.setAddress(address);
+}
 
-    public void updatePhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
+public void updatePhoneNumber(String phoneNumber) {
+    contactInfo.setPhoneNumber(phoneNumber);
+}
 
-    public void updateEmail(String email) {
-        this.email = email;
-    }
+public void updateEmail(String email) {
+    contactInfo.setEmail(email);
+}
+
 
 
     

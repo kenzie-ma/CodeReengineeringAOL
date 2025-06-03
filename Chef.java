@@ -12,14 +12,6 @@ public class Chef {
     private int completedOrders;
     private int breaksTaken;
     private boolean kitchenClean;
-    private boolean extraCheese;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String phoneNumber;
-    private String email;
-    private String tempDiscountCode;
-    private String tempOrderNote;
 
     public Chef() {
         this.pizza = null;
@@ -27,7 +19,6 @@ public class Chef {
         this.completedOrders = 0;
         this.breaksTaken = 0;
         this.kitchenClean = true;
-        this.extraCheese = false;
     }
 
     public void bakePizza(String pizzaType) {
