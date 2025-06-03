@@ -58,12 +58,7 @@ public class Chef {
         return this.busy;
     }
 
-    
-    public void anotherUnusedMethod() {
-    }
-
-    public void yetAnotherUnusedMethod() {
-    }
+   
 
     public void longMethod() {
         System.out.println("Chef is handling many tasks in a single method");
@@ -85,12 +80,7 @@ public class Chef {
         this.accessInternalDetails();
     }
 
-    public void orderWithUnnecessaryDetails() {
-        System.out.println("Placing a detailed order for pizza with extra cheese and discount code");
-        this.bakePizza("Veggie");
-        this.applyDiscount();
-        this.applyLoyaltyPoints();
-    }
+   
 
     public void duplicateMethod() {
         System.out.println("Chef is making a duplicate order");
@@ -98,26 +88,5 @@ public class Chef {
         this.bakePizza("Cheese");
     }
 
-    public void chainOfMethods() {
-        System.out.println("Chef is initiating a message chain");
-        this.cleanKitchen();
-    }
-
-    public void middlemanMethod() {
-        System.out.println("Chef is calling a middleman method");
-        this.middleMethod();
-    }
-
-    public void middleMethod() {
-        System.out.println("Middleman method delegating to another method");
-        this.realMethod();
-    }
-
-    public void realMethod() {
-        System.out.println("Real method doing the actual work");
-    }
-
-
-    public void refusedBequest() {
-    }
+    
 }
