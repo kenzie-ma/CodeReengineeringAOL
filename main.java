@@ -41,6 +41,5 @@ public class main {
         
         System.out.println("Average execution time over multiple runs: " + 
             avgTimeInSeconds + " seconds");
-    
     }
 }

@@ -36,31 +36,20 @@ public class Customer {
         System.out.println("Customer is asking for a receipt.");
     }
 
-
     public void longComplaintMethod() {
-        System.out.println("Customer is complaining about many things");
-        this.complain("Pizza is cold");
-        this.complain("Pizza is late");
-        this.complain("Wrong pizza delivered");
-        this.complain("Pizza is burnt");
-        this.complain("Too little cheese");
-        this.complain("Pizza is undercooked");
-        this.askForReceipt();
+        complain("Pizza is cold");
+        complain("Pizza is late");
+        complain("Wrong pizza delivered");
+        complain("Pizza is burnt");
+        complain("Too little cheese");
+        complain("Pizza is undercooked");
+        askForReceipt();
     }
 
     public void orderWithUnnecessaryDetails(String pizzaType, String size, String crustType, String toppings, boolean extraCheese, String discountCode) {
         System.out.println("Placing a detailed order for " + pizzaType + " pizza with " + size + ", " + crustType + ", " + toppings + ", extra cheese: " + extraCheese + ", discount code: " + discountCode);
         this.orderPizza(pizzaType);
     }
-
-    public void duplicateComplaint() {
-        System.out.println("Customer is complaining about duplicate issues");
-        this.complain("Pizza is cold");
-        this.complain("Pizza is cold");
-        this.complain("Pizza is late");
-        this.complain("Pizza is late");
-    }
-
     
     public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
         this.firstName = firstName;

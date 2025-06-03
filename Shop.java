@@ -32,16 +32,17 @@ public class Shop {
     }
 
     public Pizza createPizza(String pizzaType) {
-        if (pizzaType.equals("Cheese")) {
-            return new CheesePizza();
-        } else if (pizzaType.equals("Veggie")) {
-            return new VeggiePizza();
-        } else if (pizzaType.equals("Tuna")) {
-            return new TunaPizza();
-        } else if (pizzaType.equals("Pepperoni")) {
-            return new PepperoniPizza();
-        } else {
-            throw new IllegalArgumentException("Unknown pizza type");
+        switch (pizzaType.toLowerCase()) {
+            case "cheese":
+                return new CheesePizza();
+            case "veggie":
+                return new CheesePizza();
+            case "tuna":
+                return new CheesePizza();
+            case "pepperoni":
+                return new CheesePizza();
+            default:
+                throw new IllegalArgumentException("Unknown pizza type");
         }
     }
 

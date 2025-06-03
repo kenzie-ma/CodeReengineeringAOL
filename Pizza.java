@@ -52,10 +52,9 @@ public class Pizza {
 
 
     public void longMethod() {
-        System.out.println("Pizza is handling many tasks in a single method");
-        this.setSize("Large");
-        this.setDoughType("Thin Crust");
-        this.setTopping("Pepperoni");
+        setSize("Large");
+        setDoughType("Thin Crust");
+        setTopping("Pepperoni");
        
     }
 
@@ -66,13 +65,6 @@ public class Pizza {
         this.setTopping(toppings);
         this.applyDiscount();
     }
-
-    public void duplicateMethod() {
-        System.out.println("Customer is making a duplicate order");
-        this.setTopping("Cheese");
-        this.setTopping("Cheese");
-    }
-
 
 }
 

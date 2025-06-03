@@ -45,18 +45,11 @@ public class Cashier {
         System.out.println("Cashier is delivering pizza to the customer.");
     }
 
-    public void askForReceipt() {
-        System.out.println("Customer is asking for a receipt.");
-    }
-
-
     public void longMethod() {
-        System.out.println("Cashier is handling many tasks in a single method");
-        this.takeOrder("Cheese");
-        this.hurryUpChef();
-        this.calmCustomerDown();
-        this.deliverPizzaToCustomer();
-        this.askForReceipt();
+        takeOrder("Cheese");
+        hurryUpChef();
+        calmCustomerDown();
+        deliverPizzaToCustomer();
     }
 
     public void duplicateMethod() {
