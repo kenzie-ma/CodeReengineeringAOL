@@ -28,16 +28,6 @@ public class Customer {
         System.out.println("Customer is asking for a receipt.");
     }
 
-    public void longComplaintMethod() {
-        complain("Pizza is cold");
-        complain("Pizza is late");
-        complain("Wrong pizza delivered");
-        complain("Pizza is burnt");
-        complain("Too little cheese");
-        complain("Pizza is undercooked");
-        askForReceipt();
-    }
-
     public void updateName(String firstName, String lastName) {
         contactInfo.updateName(firstName, lastName);
     }

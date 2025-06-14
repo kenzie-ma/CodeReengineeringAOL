@@ -9,16 +9,10 @@ LICENSE file in the root directory of this source tree. This dataset contains sm
 public class Chef {
     private Pizza pizza;
     private boolean busy;
-    private int completedOrders;
-    private int breaksTaken;
-    private boolean kitchenClean;
 
     public Chef() {
         this.pizza = null;
         this.busy = false;
-        this.completedOrders = 0;
-        this.breaksTaken = 0;
-        this.kitchenClean = true;
     }
 
     public void bakePizza(PizzaType  pizzaType) {
@@ -42,7 +36,6 @@ public class Chef {
 
     public void cleanKitchen() {
         System.out.println("Chef is cleaning the kitchen.");
-        this.kitchenClean = true;
     }
 
     public boolean isBusy() {
