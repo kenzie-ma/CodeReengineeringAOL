@@ -7,51 +7,47 @@ LICENSE file in the root directory of this source tree. This dataset contains sm
 
 
 public class Cashier {
-    private Chef chef;
+    private Ordering ordering;
+    private CustomerService cs;
+    private Notifier notifier;
   
     public Cashier(Chef chef) {
-        this.chef = chef;
+        this.ordering = new Ordering(chef);
+        this.cs = new CustomerService();
+        this.notifier = new Notifier();
     }
 
-    public Chef getChef() {
-        return this.chef;
-    }
-
-    public void takeOrder(PizzaType  pizzaType) {
-        System.out.println("Cashier is taking order for " + pizzaType + " pizza.");
-        chef.bakePizza(pizzaType);
+    public void takeOrder(PizzaType pizzaType) {
+        ordering.takeOrder(pizzaType);
     }
 
     public void hurryUpChef() {
-        System.out.println("Cashier is hurrying up the chef.");
-        chef.hurryUp();
+        ordering.hurryUpChef();
     }
 
     public void calmCustomerDown() {
-        System.out.println("Cashier is calming the customer down.");
+        cs.calmCustomerDown();
     }
 
     public void deliverPizzaToCustomer() {
-        System.out.println("Cashier is delivering pizza to the customer.");
+        cs.deliverPizzaToCustomer();
     }
 
-    public void notifyForPromotion() {
-        System.out.println("Notifying customer for promotion");
+     public void notifyForPromotion() {
+        notifier.notifyCustomer("promotion");
     }
 
     public void notifyForDiscount() {
-        System.out.println("Notifying customer for discount");
+        notifier.notifyCustomer("discount");
     }
 
     public void notifyForNewArrivals() {
-        System.out.println("Notifying customer for new arrivals");
+        notifier.notifyCustomer("new arrivals");
     }
 
     public void applyDiscount() {
-        System.out.println("Applying discount for customer");
+        notifier.applyDiscount();
     }
 
-    public void applyLoyaltyPoints(boolean frequentCustomerDiscount) {
-        System.out.println("Applying loyalty points for customer");
-    }
+    
 }

@@ -29,7 +29,7 @@ public class Shop {
         return this.chef;
     }
 
-    public void handleCustomerComplaint(String complaint) {
+    public void calmCustomer(String complaint) {
         System.out.println("Forwarding complaint to cashier...");
         cashier.calmCustomerDown();
     }

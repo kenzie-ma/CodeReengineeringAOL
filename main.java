@@ -38,7 +38,8 @@ public class main {
             totalExecutionTime += time;
         }
         
-        return totalExecutionTime / runs / 1_000_000_000.0;
+        double avgTime =  totalExecutionTime / runs / 1_000_000_000.0;
+        return avgTime;
     }
 
     public static void printMeasurement(double measureExecutionTime){

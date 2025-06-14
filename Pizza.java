@@ -10,13 +10,11 @@ public class Pizza {
     private String size;
     private String doughType;
     private String topping;
-    private boolean extraCheese;
 
     public Pizza(String size, String doughType, String topping) {
         this.size = size;
         this.doughType = doughType;
         this.topping = topping;
-        this.extraCheese = false;
     }
 
     public void setSize(String size) {
